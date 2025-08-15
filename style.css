@@ -1,0 +1,80 @@
+:root {
+    --cor-destaque: #860804;
+    --cor-texto: white;
+    --cor-segundaria: yellow;
+}
+
+body {
+    background-image: url(potter.png);
+    background-repeat: no-repeat;
+    background-position: 390px center;
+    background-color: black;
+    color: var(--cor-texto);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: center;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    background-position: 390px;
+}
+
+h1, .caixa-perguntas, .caixa-resultado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    transition: background-color 0.3s;
+    width: center;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-segundaria);
+}
+
+.caixa-resultado{
+    display: none;
+}
+
+.caixa-resultado.mostrar{
+    display: block;
+}
+
+.caixa-alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.comecar-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.comecar-btn:hover {
+    background-color: var(--cor-destaque); 
+}
